@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HTML 5 Web Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=0.75">
+        <!--<meta name="viewport" content="width=device-width">
+        -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+    <div class="container">
+        <div class="game">
+            <div class="deathscreen">
+                <p><img src='images/chardead.jpg'></img><br>
+                    YOU ARE DEAD
+                </p>
+                <div class="deathscore"></div>
+                <button class="deadbutton" autofocus>Play again</button>
+            </div>
+            <div class="menu">                
+                <button class="startgame">Start Game</button>
+                <button class="mutemusic">Toggle Music</button>
+                <button class="mutesounds">Toggle sounds</button>
+                <p>
+                    Charmeleon Twist!
+                </p>
+            </div>
+            <div class="score">
+                <p>score</p>
+            </div>
+            <div class="pause"><p>PAUSE</p></div>
+        	<div class="world">
+        		<div class="background"></div>
+	            <div class="playa">
+	            	<div class="player"></div>
+	            </div>
+	            <div class="platforms"></div>
+	            <div class="entities"></div>
+                
+	            <audio loop autoplay class="loop">
+			   		<source src="audio/pokemon.mp3" type="audio/mpeg">
+			    </audio>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- build:js scripts/app.js -->
+    <script src="bower_components/eventemitter2/lib/eventemitter2.js"></script>
+    <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

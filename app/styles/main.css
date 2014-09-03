@@ -1,0 +1,277 @@
+/* line 2, ../../app/styles/main.scss */
+
+body {
+  background-color: black;
+}
+
+/* line 7, ../../app/styles/main.scss */
+
+.game {
+  height: 1280px;
+  width: 720px;
+  bottom: 0px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -360px;
+}
+
+/* line 16, ../../app/styles/main.scss */
+
+.menu {
+  position: absolute;
+  height: 1280px;
+  width: 740px;
+  bottom: 0px;
+  left: -10px;
+  background-color: black;
+  background-image: url("../images/menu.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1000;
+}
+
+/* line 27, ../../app/styles/main.scss */
+
+.menu p {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  bottom: 150px;
+}
+
+/* line 34, ../../app/styles/main.scss */
+
+.menu button {
+  left: 260px;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange;
+  border-color: pink;
+  border: 5px solid pink;
+}
+
+/* line 46, ../../app/styles/main.scss */
+
+.menu .startgame {
+  bottom: 500px;
+}
+
+/* line 49, ../../app/styles/main.scss */
+
+.menu .mutemusic {
+  bottom: 400px;
+}
+
+/* line 52, ../../app/styles/main.scss */
+
+.menu .mutesounds {
+  bottom: 300px;
+}
+
+/* line 56, ../../app/styles/main.scss */
+
+.world {
+  position: absolute;
+  bottom: 0px;
+  width: 720px;
+  height: 5000px;
+}
+
+/* line 63, ../../app/styles/main.scss */
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  width: 720px;
+  height: 50000px;
+  z-index: -10;
+  background: #000000;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(50%, #2989d8), color-stop(51%, #207cca), color-stop(100%, #7db9e8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, black 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, black 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  /* IE10+ */
+  background: -webkit-linear-gradient(top, #000000 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  background: linear-gradient(to bottom, #000000 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#7db9e8',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 81, ../../app/styles/main.scss */
+
+.playa {
+  margin-left: -45px;
+}
+
+/* line 85, ../../app/styles/main.scss */
+
+.player {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  height: 89px;
+  width: 91px;
+  background-image: url("../images/CharLeft.gif");
+  background-repeat: no-repeat;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* line 98, ../../app/styles/main.scss */
+
+.player.Right {
+  background-image: url("../images/CharRight.gif");
+}
+
+/* line 104, ../../app/styles/main.scss */
+
+.platform {
+  height: 100px;
+  background-color: black;
+  border-top: 7px solid red;
+  border-bottom: 7px solid white;
+  left: 400px;
+  bottom: 300px;
+  position: absolute;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+/* line 115, ../../app/styles/main.scss */
+
+.platform.great {
+  border-top: 7px dashed red;
+  border-bottom: 7px solid white;
+  background-color: blue;
+}
+
+/* line 120, ../../app/styles/main.scss */
+
+.platform.ultra {
+  border-top: 7px dashed yellow;
+  border-bottom: 7px solid white;
+  background-color: black;
+}
+
+/* line 125, ../../app/styles/main.scss */
+
+.platform.master {
+  border-top: 7px solid purple;
+  border-bottom: 7px solid white;
+}
+
+/* line 131, ../../app/styles/main.scss */
+
+.enemy {
+  position: absolute;
+  height: 48px;
+  width: 40px;
+  left: 0;
+  bottom: 0;
+  margin-left: -20px;
+  background: url("../images/Squirtle.gif") 25% 25%/contain no-repeat;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* line 142, ../../app/styles/main.scss */
+
+.score {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100px;
+  background-color: red;
+  z-index: 100;
+  font-size: 14px;
+}
+
+/* line 151, ../../app/styles/main.scss */
+
+.score p {
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* line 156, ../../app/styles/main.scss */
+
+.pause {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  text-shadow: -2px 0 orange, 0 2px orange, 2px 0 orange, 0 -2px orange;
+  opacity: 0;
+  z-index: -100;
+  -webkit-filter: alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+
+/* line 167, ../../app/styles/main.scss */
+
+.pause.nat {
+  opacity: 1;
+  z-index: 1000;
+  -webkit-filter: alpha(opacity=1);
+  filter: alpha(opacity=1);
+}
+
+/* line 173, ../../app/styles/main.scss */
+
+.deathscreen {
+  position: absolute;
+  bottom: 0px;
+  left: -750px;
+  height: 1280px;
+  width: 740px;
+  background-color: black;
+  z-index: 10000;
+}
+
+/* line 181, ../../app/styles/main.scss */
+
+.deathscreen img {
+  bottom: 50%;
+  left: 50%;
+}
+
+/* line 185, ../../app/styles/main.scss */
+
+.deathscreen p {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* line 190, ../../app/styles/main.scss */
+
+.deathscreen button {
+  left: 260px;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange;
+  border-color: pink;
+  border: 5px solid pink;
+}
